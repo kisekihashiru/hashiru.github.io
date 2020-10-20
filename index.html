@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Hashiruページ</title>
+        <style>
+          body {
+            padding-top: 50px;
+          }
+          .jumbotron {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background:url(MyPortfolio.jpg) center no-repeat;
+            /* background-size: cover; */
+           }
+           #wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+           }
+          footer {
+            margin-top: auto;
+            padding-top: 20px;
+            width: 100%;
+            height: 200px;
+            color: #ffffff;
+            background-color: #222222;
+          }
+        </style>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script>
+        $(function(){
+           $('a[href^=#]').click(function() {
+              var speed = 1000;
+              var href= $(this).attr("href");
+              var target = $(href == "#" || href == "" ? 'html' : href);
+              var position = target.offset().top;
+              $('body,html').animate({scrollTop:position}, speed, 'swing');
+              return false;
+           });
+        });
+        </script>
+    </head>
+    <body>
+      <nav class='navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
+          <a href="#Top" class='navbar-brand'>Hashiru Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left Side -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#Profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Skill">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Work">Work</a>
+              </li>
+            </ul>
+
+          </div>
+      </nav>
+      <div id="wrapper">
+        <div id="Top" class="jumbotron">
+         <div class="container">
+           <h1 class="text-light">Hashiru Portfolio</h1>
+           <p class="text-light">
+             AI & ITエンジニアを目指してます
+           </p>
+         </div>
+        </div>
+        <div id="Profile" class='container-fluid'>
+          <div class="py-3 bg-primary">
+            <h1 class="text-center text-white">Profile</h2>
+          </div>
+          <div class="py-2 container">
+            <div class="row">
+              <div class="col-6">
+                <img class="img-fluid" src="Profile.gif" width="400" height="400" alt="Profile_img">
+              </div>
+              <div class="col-6 align-self-center">
+                <p class="text-left">
+                  アカウント名：Hashiru
+                </p>
+                <p class="text-left">
+                  名前：KenTakahashi
+                </p>
+                <p class="text-left">
+                  誕生日：4月3日（牡羊座）
+                </p>
+                <p class="text-left">
+                  理系大学卒業後、自動制御メーカーに就職。生産技術として計画～移管を経験。
+                  自動加工ライン計画を担当。
+                  人工知能、機械学習やディープラーニングという分野に興味を持ち、
+                  学習コンテンツ等を利用し独学でPython等を学習。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Skill" class='container-fluid'>
+          <div class="py-3 bg-secondary">
+            <h1 class="text-center text-white">Skill</h2>
+          </div>
+          <div class="py-2 container">
+            <div class="row">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>No.</th>
+                    <th>プログラム言語</th>
+                    <th>ライブラリ/備考</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Python3.x</td>
+                    <td>Flask, Dash, SQLAlchemy, Pandas, Numpy, etc..</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>PHP7.x</td>
+                    <td>Laravel</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Java, Ruby</td>
+                    <td>(Paizaラーニング受講済: Java, Ruby入門)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>HTML, CSS</td>
+                    <td>(独学にて学習)</td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th>No.</th>
+                    <th>その他 特技</th>
+                    <th>備考</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>PhotoShop, Illustrator</td>
+                    <td>画像加工で利用, Udemyにて学習済</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>AfterEffects, PremierePro</td>
+                    <td>動画編集で利用, Udemyにて学習済</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>RaspberryPi</td>
+                    <td>開発用サーバとして利用</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>SQLite</td>
+                    <td>開発用データベースとして利用</td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-info">取得資格</li>
+              <li class="list-group-item">普通自動車運転免許証</li>
+              <li class="list-group-item">ITパスポート試験 合格</li>
+              <li class="list-group-item">G検定 合格</li>
+              <li class="list-group-item">Python3エンジニア検定基礎試験 合格</li>
+              <li class="list-group-item">PHP7技術者認定初級試験 合格</li>
+              <li class="list-group-item">統計検定3級 合格</li>
+            </ul>
+          </div>
+        </div>
+        <div id="Portfolio" class='container-fluid'>
+          <div class="py-3 bg-success">
+            <h1 class="text-center text-white">Portfolio</h2>
+          </div>
+          <div class="py-2 container">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th>No.</th>
+                  <th>アプリ名</th>
+                  <th>内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <a href="http://letsengineering.tech/top"  target="_blank" rel="noopener noreferrer" class="text-dark">
+                      LetsEngineering(Web掲示板)
+                    </a>
+                  </td>
+                  <td>
+                    <a href="http://letsengineering.tech/top"  target="_blank" rel="noopener noreferrer" class="text-dark">
+                      アカウント認証、画像投稿機能付きWeb掲示板
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <a href="https://covid19-graph-jp.herokuapp.com/"  target="_blank" rel="noopener noreferrer" class="text-dark">
+                      COVID19感染者推移Web
+                    </a>
+                  </td>
+                  <td>
+                    <a href="https://covid19-graph-jp.herokuapp.com/"  target="_blank" rel="noopener noreferrer" class="text-dark">
+                      日本の主要地域別COVID19患者数推移のグラフ化Web、日々自動更新
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>※アプリ名クリックで対象アプリへ</p>
+          </div>
+        </div>
+        <div id="Work" class='container-fluid'>
+          <div class="py-3 bg-info">
+            <h1 class="text-center text-white">Work</h2>
+          </div>
+          <div class="py-2">
+            <p class="text-center">
+              前職は自動制御機器メーカーで働いていました。<br>
+              AI & ITエンジニアを目指して勉強中 & 就職活動中です。<br>
+              勉強の成果としてWebアプリを少しずつ作成出来たら良いなと思ってます。<br>
+            </p>
+          </div>
+        </div>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <p>ABOUT ME</p>
+                AcountName: Hashiru<br>
+                Name: KenTakahashi<br>
+              </div>
+              <div class="col-md-4">
+                <p>CONTACT</p>
+                E-mail: <a href="mailto:kiseki.hashiru@gmail.com" class="text-light">kiseki.hashiru@gmail.com</a><br>
+                Twitter: <a href="https://twitter.com/hashiru29033564" class="text-light">@hashiru29033564</a><br>
+              </div>
+              <div class="col-md-4">
+                <p>注意事項</p>
+                無断転載はご遠慮ください。<br>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </body>
+</html>
